@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+      <link rel="stylesheet" href="footerstyle.css">
+      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="contact.css">
+      <style>
+        .header{
+            display: -ms-inline-grid;
+
+        }
+        li,a,form{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+            color:#0088a9
+            
+        }
+        header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:20px 10%;
+            background-color: rgb(0, 0, 0);
+            background-image: url('color_bg.png');
+      background-repeat:no-repeat;
+      background-size:cover;
+    backface-visibility: visible;
+      background-position: 300px;
+      padding-left: 20px;
+      overflow: hidden;
+        }
+        .logo{
+            cursor: pointer;
+        }
+
+        .nav_linkss{
+            list-style: none;
+        }
+       .nav_links li{
+        display:inline-block;
+        padding:0px 15px;
+        color: white;
+   
+       }
+       .nav_links li a{
+        transition: all 0.3s ease 0s;
+        color:rgb(4, 4, 4);
+        font-size:large;
+        font-weight: bold;
+       }
+       .nav_links li a:hover{
+        color:#ffd900;
+        font-weight: bold;
+       }
+       button{
+        padding:9px 25px;
+        background:rgba(0,136,169,1);
+        border:none;
+        border-radius: 50px;
+        cursor:pointer;
+        transition:all 0.3s ease 0s;
+       }
+       button:hover{
+        background-color:rgba(0,136,169,0.8);
+       }
+        .logo{
+            display:flex;
+            justify-content: space-between;
+        }
+        .searchh{
+          border-radius: 50px;
+          padding:9px 20px;
+          border: none;
+        }
+        a  :hover{
+          text-decoration: white;
+        } 
+        .form{
+          width:500px;
+          background-color: black;
+        }
+        .container{
+        animation: transitionIn 0.85s;
+
+       }
+       @keyframes transitionIn {
+        from{
+          opacity:0;
+          transform:rotateX(-10deg);
+        }
+        to{
+          opacity: 1;
+          transform : rotateX(0);
+
+        }
+      }
+     
+        </style>
+   
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="images\logo.png" style="width:120px ; height:80px;"">
+            <a class="navbar-brand" href="#"><h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:rgb(255, 221, 0);font-size: 30px; padding-top: 7px;">Medicon</h1></a>
+        </div>
+                    <div class="links">
+                      
+            
+                       <nav class="navbar navbar-expand">
+                        
+                       
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="nav_links">
+                            <li class="nav-item active">
+                              <a class="nav-linkss" href="index.html">HOME </a>
+                            </li>
+                            <li class="nav-items">
+                              <a class="nav-linkss" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-items">
+                              <a class="nav-linkss" href="doctor.html">DOCTOR</a>
+                            </li>
+                           
+                            <li class="nav-items">
+                                <a class="nav-linkss" href="depatments.html">DEPARTMENT</a>
+                              </li>
+                              <li class="nav-items">
+                                <a class="nav-linkss" href="contact.html">CONTACTUS</a>
+                              </li>
+                              <li class="nav-item">
+                                <input class="searchh" type="search" placeholder="Search">
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                              </li>
+                              <li class="nav-item active">
+                                <a class="nav-link" href="insert.php">LOGOUT</a>
+                              </li>      
+                              
+                             
+                          </ul>
+            
+                          
+                        </div>
+                      </nav>
+                      
+                   
+            
+                    </div>
+                  
+    </header>
+   
+
+      <!-- header section end -->
+      <!-- contact section start -->
+  <div class="contact_section layout">
+    <br>
+        <div class="container">
+          <div class="row">
+           
+            <div class="col-md-6 p1">
+              <h1 class="contact_text1">Contact Us</h1>
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <input type="text" class="email-bt" placeholder="Name" name="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="email-bt" placeholder="Email" name="Email">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="email-bt" placeholder="Subject" name="Email">
+                  </div>
+                    <div class="form-group">
+                      <textarea class="message-bt" placeholder="Message" rows="10" cols="33" id="comment" name="text"></textarea>
+                    </div>
+                  </form>
+                  <br>
+                  <div class="main_bt"><a href="#" style="color:white;">Send</a></div>
+              </div>
+            <div class="col-md-6 p2">
+              <h1 class="contact_text">What doctors say?</h1>
+              <div id="contactmatter" class="contactmatter" >
+              
+              
+            
+                      <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                  
+                  </div>
+                  <div class="carousel-item">
+                    <h2 class="selfideno_text">Smith Druno</h2>
+                    <div class="client_main">
+                      <div class="image_12"style="width:300px"><img src="images/img-5.png" ></div>
+                      <p class="lorem_ipsum_text">We practice medicine that our historical ancestors could only dream of, and we have access to amazing treatments and cures for our patients on a daily basis.</p>
+                      <div class="quote_icon"><img src="images/quote-icon.png"></div>
+                      <div class="image_12" style="width:300px"><img src="images/img-12.png"></div>
+                     
+                      <p>
+                        "Wherever the art of Medicine is loved, there is also a love of Humanity. ”</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+      <!-- contact section end -->
+      <!-- appointment section start -->
+      <div class="appointment_section" style="background-color: rgb(229, 117, 249);">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="need_text">Need a doctor for check-Up </h3>
+              <h1 class="make_text">Make An Appointment & You're Done </h1>
+            </div>
+            <div class="col-md-6">
+              <div class="appointment_bt_main">
+                <div class="appointment_bt"><a href="appointment.php" style="color:white;font-weight: bold;">Get Appointment</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+
+      <!-- footer section start -->
+      
+    <footer class="footer">
+        <div class="container foot">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Medical Care</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>The Services</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Departments</h4>
+              <ul>
+                <li><a href="#"> Cancer Oncology</a></li>
+                <li><a href="#"> Dental Surgery  </a></li>
+                <li><a href="#"> Diagnose & Research</a></li>
+                <li><a href="#">  Drug / Medicines</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><img src="images/fb-icon.png" alt="" /></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="" /></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="" /></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+    <!-- end info section -->
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+      <div class="container">
+        <p class="copyright">Mini project designed by <a href="https://html.design">Narasimha Swamy</a></p>
+      </div>
+    </div>
+   
+   </body>
+   </html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="footerstyle.css">
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="footerstyle.css">
+      <link rel="stylesheet" href="about.css">
+      <style>
+        .header{
+            display: -ms-inline-grid;
+
+        }
+        li,a,form{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+            color:#0088a9
+            
+        }
+        header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:20px 10%;
+            background-color: black;
+            background-image: url('color_bg.png');
+      background-repeat:no-repeat;
+      background-size:cover;
+    backface-visibility: visible;
+      background-position: 300px;
+      padding-left: 20px;
+      overflow: hidden;
+        }
+        .logo{
+            cursor: pointer;
+        }
+
+        .nav_linkss{
+            list-style: none;
+        }
+       .nav_links li{
+        display:inline-block;
+        padding:0px 15px;
+        color: white;
+      
+       }
+       .nav_links li a{
+        transition: all 0.3s ease 0s;
+        color:rgb(0, 0, 0);
+        font-size:large;
+    
+        font-weight: bold;
+       }
+       .nav_links li a:hover{
+        color:#ffc400;
+        font-weight: bold;
+       }
+       button{
+        padding:9px 25px;
+        background:rgba(0,136,169,1);
+        border:none;
+        border-radius: 50px;
+        cursor:pointer;
+        transition:all 0.3s ease 0s;
+       }
+       button:hover{
+        background-color:rgba(0,136,169,0.8);
+       }
+        .logo{
+            display:flex;
+            justify-content: space-between;
+        }
+        .searchh{
+          border-radius: 50px;
+          padding:9px 20px;
+          border: none;
+        }
+        a  :hover{
+          text-decoration: white;
+        } 
+        .container-fluid{
+        animation: transitionIn 0.75s;
+
+       }
+       @keyframes transitionIn {
+        from{
+          opacity:0;
+          transform:rotateX(-10deg);
+        }
+        to{
+          opacity: 1;
+          transform : rotateX(0);
+
+        }
+      }
+        </style>
+  
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="images\logo.png" style="width:120px ; height:80px;">
+            <a class="navbar-brand" href="#"><h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:rgb(255, 221, 0);font-size: 30px;padding-top: 7px;">Medicon</h1></a>
+        </div>
+                    <div class="links">
+                      
+            
+                       <nav class="navbar navbar-expand">
+                        
+                       
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="nav_links">
+                          <li class="nav-item active">
+                            <a class="nav-linkss" href="index.html">HOME </a>
+                          </li>
+                          <li class="nav-items">
+                            <a class="nav-linkss" href="about.html">ABOUT</a>
+                          </li>
+                          <li class="nav-items">
+                            <a class="nav-linkss" href="doctor.html">DOCTOR</a>
+                          </li>
+                         
+                          <li class="nav-items">
+                              <a class="nav-linkss" href="depatments.html">DEPARTMENT</a>
+                            </li>
+                            <li class="nav-items">
+                              <a class="nav-linkss" href="contact.html">CONTACTUS</a>
+                            </li>
+                            <li class="nav-item">
+                              <input class="searchh" type="search" placeholder="Search">
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                            </li>
+                            <li class="nav-item active">
+                              <a class="nav-link" href="login.php">LOGIN</a>
+                            </li>      
+                            
+                             
+                          </ul>
+            
+                          
+                        </div>
+                      </nav>
+                      
+                   
+            
+                    </div>
+                  
+    </header>
+
+      <!-- header section end -->
+      <!-- doctor section start -->
+     
+      <div class="doctor_section layout_padding">
+        <h4 class="about_text">Best Docters and Laboratory</h4>
+        <br>
+        <div class="container-fluid">
+          <div class="row one">
+           
+            <div class="col-md-6">
+              <div class="image_4"><img src="images/img-4.png"></div>
+            </div>
+            
+            <div class="col-md-6">          
+                <h1 class="highest_text">Doctors</h1>
+                <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur </p>
+                <div class="read_main">
+                  <div class="read_bt"><a href="#">Read More</a></div>
+                </div>
+            </div>
+            
+          </div>
+          <br>
+          <div class="row two">
+           
+          
+            <div class="col-md-6 two">          
+                <h1 class="highest_text">Laboratory</h1>
+                <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur </p>
+                <div class="read_main">
+                  <div class="read_bt"><a href="#">Read More</a></div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="image_7"><img src="images/img-7.png"></div>
+            </div>
+            
+          </div>
+          <br>
+          <div class="row three">
+            <div class="col-md-6">
+              <div class="image_6"><img src="images/img6.png"></div>
+            </div>
+            <div class="col-md-6 ">          
+                <h1 class="highest_text">Care</h1>
+                <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur </p>
+                <div class="read_main">
+                  <div class="read_bt"><a href="#">Read More</a></div>
+                </div>
+            </div>
+           
+            
+          </div>
+        </div>
+      </div>
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Medical Care</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>The Services</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Departments</h4>
+            <ul>
+              <li><a href="#"> Cancer Oncology</a></li>
+              <li><a href="#"> Dental Surgery </a></li>
+              <li><a href="#"> Diagnose & Research</a></li>
+              <li><a href="#"> Drug / Medicines</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><img src="images/fb-icon.png" alt="" /></a>
+              <a href="#"><img src="images/twitter-icon.png" alt="" /></a>
+              <a href="#"><img src="images/linkedin-icon.png" alt="" /></a>
+              <a href="#"><img src="images/instagram-icon.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end info section -->
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+      <div class="container">
+        <p class="copyright">Mini project designed by <a href="#">Narasimha Swamy</a></p>
+      </div>
+    </div>
+  
+  </body>
+  
+  </html>

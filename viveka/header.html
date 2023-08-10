@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer1.css">
+ 
+    
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .header {
+            display: -ms-inline-grid;
+
+        }
+
+        li,
+        a,
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+            color: #0088a9
+        }
+
+        header {
+            position: fixed;
+            transition: all 1s;
+            display: flex;
+            width: 100%;
+            height:15%;
+            top:0;
+            left:0;
+            justify-content: space-between;
+            align-items: center;
+            z-index:100;
+            padding: 20px 120px;
+            background-color: #11141a;
+            background-image: url('col.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+           padding: 80px;
+           
+            padding-left: 20px;
+           
+           
+        }
+      
+       .bgcolor{
+        transition: all 1.5s;
+        position: fixed;
+       
+            display: flex;
+            width: 100%;
+            height:15%;
+            top:0;
+            left:0;
+            justify-content: space-between;
+            align-items: center;
+            z-index:100;
+            padding: 60px;
+            
+            background-image: url('colooo.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 300px;
+           color:black;
+           
+            padding-left: 20px;
+
+        }
+        
+
+        .logo {
+            cursor: pointer;
+            border-radius: 120px;
+        }
+
+        .nav_linkss {
+            list-style: none;
+        }
+
+        .nav_links li {
+            display: inline-block;
+            padding: 0px 25px;
+            color: rgb(10, 10, 10);
+
+        }
+
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            margin-left:-20px;
+            padding: auto;
+           
+            
+            padding-right: 25px;
+
+            font-weight: 790;
+        }
+   
+/* CSS */
+.button{
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #f454ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #000000 0 3px 7px inset;
+  transform: translateY(2px);
+}
+        .nav_links li a{
+          position: relative;
+        }
+        .nav_links li a::before{
+          content: "";
+          position: absolute;
+          border-bottom: 3px solid rgb(225, 255, 0);
+          height:100%;
+          width:0;
+          border-radius: 3px;
+          top:0;
+          left:0;
+          transition: 0.4s;
+    
+          
+        }
+       
+        .nav_links li a:hover::before{
+       
+          width:100%;
+          transition:0.4s;
+
+        }
+
+        .nav_links li a:hover {
+          position:relative;
+            color: #ffc400;
+
+        
+            font-weight: bold;
+        }
+
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            width:100px;
+            color:#fff;  
+            text-align:left;
+            padding-right: 250px;
+            
+
+        }
+        .logo h1{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           
+            color:rgba(238, 255, 0, 0.9);
+            width:10px ;
+            font-size: 25px;
+            font-weight:300px;
+            
+            padding-top: 0px;
+        }
+
+        a :hover {
+            text-decoration: white;
+        }
+        .head{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            min-height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background: #1f242d;
+            font-size: 100px;
+            color:#fff;
+            font-weight:700;
+        }
+        .sub-menu-1, .sub-menu-2, .sub-menu-3, .sub-menu-4, .sub-menu-5{
+            display: none;
+        }
+        .links ul li:hover .sub-menu-1{
+        display:block ;
+        position: absolute;
+        background:white ;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(254, 107, 222, 0.967) 0px -12px 30px, rgb(203, 125, 245) 0px 4px 6px, rgba(254, 111, 232, 0.979) 0px 12px 13px, rgb(203, 125, 245) 0px -3px 5px;
+    
+        padding-left: 5px;
+        margin-top: 15px;
+        margin-bottom: 1000px;
+        margin-left:-15px;
+       }
+       .links ul li:hover .sub-menu-1 ul{
+        display:block;
+        margin:10px;
+       }
+       .head ul li:hover .sub-menu-1 ul li
+       {
+        display:block;
+        width:200px;
+        padding: 10px;
+        border-bottom: 1px solid #000000;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+       
+       }
+       .head ul li:hover .sub-menu-1 ul li:last-child{
+
+        border-bottom:none;
+       }
+       .head ul li:hover .sub-menu-1 ul li a:hover{
+        color:#e01af2;
+        padding-left: 8px;
+        
+        border-bottom:none;
+       }
+      
+        .links ul li:hover .sub-menu-2{
+        display:block ;
+        position: absolute;
+        background:white ;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(104, 91, 248, 0.967) 0px -12px 30px, rgba(104, 91, 248, 0.967)0px 4px 6px, rgba(104, 91, 248, 0.967) 0px 12px 13px, rgba(104, 91, 248, 0.967) 0px -3px 5px;
+    
+        padding-left: 5px;
+        margin-top: 15px;
+        margin-left:-15px;
+       }
+       .links ul li:hover .sub-menu-2 ul{
+        display:block;
+        margin:10px;
+       }
+       .head ul li:hover .sub-menu-2 ul li
+       {
+        display:block;
+        width:300px;
+        padding: 20px;
+        border-bottom: 1px solid #000000;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+       
+       }
+       .head ul li:hover .sub-menu-2 ul li:last-child{
+
+        border-bottom:none;
+       }
+       .head ul li:hover .sub-menu-2 ul li a:hover{
+        padding-left: 8px;
+
+        color:#740a7e;
+        
+        border-bottom:none;
+       }
+       
+        .links ul li:hover .sub-menu-3{
+        display:block ;
+        position: absolute;
+        background:white ;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, #18bbfbf7 0px -12px 30px, #18bbfbf7 0px 4px 6px, #18bbfbf7 0px 12px 13px, #18bbfbf7 0px -3px 5px;
+    
+        padding-left: 5px;
+        margin-top: 6px;
+        margin-left:-15px;
+       }
+       .links ul li:hover .sub-menu-3 ul{
+        display:block;
+        margin:10px;
+       }
+       .head ul li:hover .sub-menu-3 ul li
+       {
+        display:block;
+        width:125px;
+        padding: 10px;
+        border-bottom: 1px solid #000000;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+       
+       }
+       .head ul li:hover .sub-menu-3 ul li:last-child{
+
+        border-bottom:none;
+       }
+       .head ul li:hover .sub-menu-3 ul li a:hover{
+        color:#740a7e;
+        padding-left: 8px;
+        
+        border-bottom:none;
+       }
+    
+        .links ul li:hover .sub-menu-4{
+        display:block ;
+        position: absolute;
+        background:white ;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(107, 220, 254, 0.967) 0px -12px 30px, rgba(107, 220, 254, 0.967) 0px 4px 6px, rgba(107, 220, 254, 0.967) 0px 12px 13px, rgba(107, 220, 254, 0.967) 0px -3px 5px;
+    
+        padding-left: 5px;
+        margin-top: 15px;
+        margin-left:-15px;
+       }
+       .links ul li:hover .sub-menu-4 ul{
+        display:block;
+        margin:10px;
+       }
+       .head ul li:hover .sub-menu-4 ul li
+       {
+        display:block;
+        width:305px;
+        padding: 10px;
+        border-bottom: 1px solid #000000;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+       
+       }
+       .head ul li:hover .sub-menu-4 ul li:last-child{
+
+        border-bottom:none;
+       }
+       .head ul li:hover .sub-menu-4 ul li a:hover{
+        color:#740a7e;
+        padding-left: 8px;
+        
+        border-bottom:none;
+       }
+  
+        .links ul li:hover .sub-menu-5{
+        display:block ;
+        position: absolute;
+        background:white ;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(107, 254, 141, 0.967) 0px -12px 30px, rgb(107, 254, 141) 0px 4px 6px,  rgba(107, 254, 141, 0.967) 0px 12px 13px,  rgb(107, 254, 141) 0px -3px 5px;
+    
+        padding-left: 5px;
+        margin-top: 15px;
+        margin-left:-15px;
+       }
+       .links ul li:hover .sub-menu-5 ul{
+        display:block;
+        margin:10px;
+       }
+       .head ul li:hover .sub-menu-5 ul li
+       {
+        display:block;
+        width:125px;
+        padding: 10px;
+        border-bottom: 1px solid #000000;
+        background: transparent;
+        border-radius: 0;
+        text-align: left;
+       
+       }
+       .head ul li:hover .sub-menu-5 ul li:last-child{
+
+        border-bottom:none;
+       }
+       .head ul li:hover .sub-menu-5 ul li a:hover{
+        color:#740a7e;
+        padding-left: 8px;
+        
+        border-bottom:none;
+       }
+  
+      
+ .appointment_bt {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  margin:20px;
+  margin-left:200px;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.appointment_bt:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-appointment_bt 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-appointment_bt{
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.appointment_bt:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.app{
+  margin-top: 20px;
+}
+.logoimg img{
+  height: 200px;
+}   
+ .social-links img{
+  height: 40px;
+    margin-right: 5px;
+    width: auto;
+    cursor: pointer;
+    margin-top: 0px;
+    position: relative;
+ }      
+       
+    
+
+    </style>
+</head>
+
+<body>
+    <div  class="head">
+
+        <header id="navbar">
+
+            <div class="logo">
+                <img src="images\logo.png" style="width:120px ; height:100px;padding-right: 10px;border-top-left-radius: 20px;border-top-left-radius: 30px;">
+                <a class="navbar-brand" href="#">
+                    <h1 
+                        >
+                        VIVEKA EDUCATIONAL SOCIETY</h1>
+                </a>
+            </div>
+            <div  class="links">
+    
+    
+                <nav class="navbar navbar-expand">
+    
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav_links">
+                            <li class="nav-item active">
+                                <a class="active" href="#">HOME </a>
+                                <div class="sub-menu-1">
+                                  <ul>
+                                    <li><a href="#">CAMPUS</a></li>
+                                    <li><a href="#">WHO WE ARE</a></li>
+                                    <li><a href="#">DETAILS</a></li>
+                             
+                                  </ul>
+                                </div>
+                            </li>
+                            <li class="nav-items">
+                                <a class="nav-linkss" href="#">ACADEMICS</a>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                      <li><a href="#">PRE PRIMARY</a></li>
+                                      <li><a href="#">PRIMARY</a></li>
+                                      <li><a href="#">SECONDARY</a></li>
+                                      <li><a href="#">SENIOR SECONDARY </a></li>
+                                    </ul>
+                                  </div>
+                            </li>
+                            <li class="nav-items">
+                              <a class="nav-linkss" href="#">ADMISSONS</a>
+                              <div class="sub-menu-2">
+                                  <ul>
+                                    <li><a href="#">ADMISSION PROCESS</a></li>
+                                    <li><a href="#">ADMISSION PROCESS</a></li>
+                                    <li><a href="#">ENROLL NOW</a></li>
+                                    
+                                  </ul>
+                                </div>
+                          </li>
+    
+                            <li class="nav-items">
+                                <a class="nav-linkss" href="#">ABOUT US</a>
+                                <div class="sub-menu-4">
+                                    <ul>
+                                      <li><a href="#">Mission-Vision</a></li>
+                                      <li><a href="#">Faculty</a></li>
+                                      <li><a href="#">Facilities</a></li>
+                                      <li><a href="#">Achievements</a></li>
+                                    </ul>
+                                  </div>
+                            </li>
+                            <li class="nav-items">
+                              <a class="nav-linkss" href="#">CO-CURRICULUM</a>
+                              <div class="sub-menu-5">
+                                  <ul>
+                                    <li><a href="#">ECA</a></li>
+                                    <li><a href="#">SPORT</a></li>
+                                    <li><a href="#">EVENTS</a></li>
+                             
+                                  </ul>
+                                </div>
+                          </li>
+                          <li class="nav-items">
+                            <button class="button">ONLINE APPLICATION</button>
+                            </li>
+                        </ul>
+    
+    
+                    </div>
+                </nav>
+    
+    
+    
+            </div>
+    
+        </header>
+        <section id="one">one</section>
+        <section id="two">two</section>
+        <section id="three">three</section>
+        <section id="four"></section>
+        <div class="appointment_section" style="background-color: rgb(229, 117, 249);">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 app">
+                <h3 class="need_text">Need an Admission from our school </h3>
+                <h1 class="make_text">Make An Application</h1>
+              </div>
+              <div class="col-md-6">
+                <div class="appointment_bt_main">
+                  <div class="appointment_bt"><a href="appointment.php" style="color:white;font-weight: bold;">Get Application-form</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+        <!-- footer section -->
+        <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col">
+                  <div class="logoimg" style="width:300px"><img src="images/logo.png"></div>
+                  <h4>VIVEKA EDUCATIONAL SOCIETY</h4>
+                  
+                </div>
+                <div class="footer-col">
+                  <h4>The Services</h4>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Departments</h4>
+                  <ul>
+                    <li><a href="#"> Cancer Oncology</a></li>
+                    <li><a href="#"> Dental Surgery </a></li>
+                    <li><a href="#"> Diagnose & Research</a></li>
+                    <li><a href="#"> Drug / Medicines</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="#"><img src="images/FBlogo.png" alt="" /></a>
+                    <a href="#"><img src="images/instalogo.png" alt="" /></a>
+                    <a href="#"><img src="images/youlogo.png" alt="" /></a>
+                    <a href="#"><img src="images/Twitterlogo.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+ 
+    <script src="navbar.js"></script>
+
+</body>
+
+</html>

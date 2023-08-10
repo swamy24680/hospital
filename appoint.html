@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- basic -->
+      <link rel="stylesheet" href="footerstyle.css">
+      <style>
+        .header{
+            display: -ms-inline-grid;
+
+        }
+        li,a,form{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+            color:#0088a9
+            
+        }
+        header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:20px 10%;
+            background-color: black;
+        }
+        .logo{
+            cursor: pointer;
+        }
+
+        .nav_linkss{
+            list-style: none;
+        }
+       .nav_links li{
+        display:inline-block;
+        padding:0px 15px;
+       }
+       .nav_links li a{
+        transition: all 0.3s ease 0s;
+        color:white;
+        font-size:large;
+    
+    font-weight: bold;
+       }
+       .nav_links li a:hover{
+        color:#58e3ff;
+        font-size:large;
+    
+    font-weight: bold;
+       }
+       button{
+        padding:9px 25px;
+        background:rgba(0,136,169,1);
+        border:none;
+        border-radius: 50px;
+        cursor:pointer;
+        transition:all 0.3s ease 0s;
+       }
+       button:hover{
+        background-color:rgba(0,136,169,0.8);
+       }
+        .logo{
+            display:flex;
+            justify-content: space-between;
+        }
+        .searchh{
+          border-radius: 50px;
+          padding:9px 20px;
+          border: none;
+        }
+        a  :hover{
+          text-decoration: white;
+        } 
+        .medal img{
+          width:100px;
+          border-radius: 50px;
+        }
+       .review img{
+          width:100px;
+          border-radius: 50px;
+
+        }
+        .profile{
+          align-items: center;
+          text-align: center;
+        }
+        .services_section {
+          background-color: rgb(101, 99, 99);
+        }
+        .col-lg-4 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            }
+
+            /* Optional: add styles for smaller devices */
+            @media (max-width: 992px) {
+            .col-lg-4 {
+                margin-bottom: 10px;
+            }
+            }
+        </style>
+
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="images\logo.png" style="width:120px ; height:80px;">
+            <a class="navbar-brand" href="#"><h1 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color:rgb(251, 235, 14);font-size: 30px;padding-top:7px;">Medicon</h1></a>
+        </div>
+                    <div class="links">
+                      
+            
+                       <nav class="navbar navbar-expand">
+                        
+                       
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="nav_links">
+
+                            <li class="nav-items">
+                                <a class="nav-linkss" href="appoint.html">YOUR PROFILE</a>
+                              </li>
+
+                            <li class="nav-items">
+                                <a class="nav-linkss" href="docappointment.html">APPOINTMENT</a>
+                              </li>
+                            <li class="nav-item active">
+
+                              <a class="nav-linkss" href="patient.php">PATIENT </a>
+                            </li>
+                        
+                           
+                           
+                           
+                              <li class="nav-item active">
+                                <a class="nav-link" href="doclogin.php">LOGOUT</a>
+                              </li>      
+                              
+                              
+                             
+                          </ul>
+            
+                          
+                        </div>
+                      </nav>
+                      
+                   
+            
+                    </div>
+                  
+    </header>
+
+    
+      <!-- header section end -->
+      <!-- services section start -->
+      <div class="services_section layout_padding padding_bottom_0"><br>
+        <h1 class="blog_text" style="color:#ffff00"> Your Profile</h1><br>
+        <div class="container">
+  
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="profile">
+                <div class="call_image"><img src="images/doctor1.png"></div><br>
+                <h1 class="emergency_text">Name: Dr. Jane Kim</h1>
+
+                  <h1>Specialty: Dermatology</h1>
+              </div>
+                  <div class="medal"><img src="education.png"></div>
+                <h2 class="call_text">Education:</h2>
+                <p class="dolor_text"> Dr. Kim received her medical degree from Stanford University School of 
+                  Medicine and completed her residency in dermatology at the University of California, San Francisco. </p>
+              
+            </div>
+            <div class="col-lg-4">
+              <div class="call_box active">
+                <div class="medal"><img src="medal.png"></div>
+                <h2 class="emergency_text">Awards and Recognitions:</h2>
+                
+                <p class="dolor_text"> Dr. Kim has been named one of the "Top Dermatologists in San Francisco" by San Francisco Magazine for five consecutive years.
+                   She is also a member of the American Academy of Dermatology and the American Society for Dermatologic Surgery. </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="call_box">
+                <div class="review"><img src="review.png"></div>
+                <h2 class="emergency_text">Patient Reviews</h2>
+
+                <p class="dolor_text">Patients rave about Dr. Kim's kind and caring bedside manner, as well as her thorough and effective treatments.
+                   One patient writes, "Dr. Kim is the best dermatologist I've ever been to. 
+                  She takes the time to listen to my concerns and always provides clear explanations of my treatment options. I trust her completely with my skin health."   </p><br><br>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+      </div>
+   
+      <!-- footer section-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Medical Care</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>The Services</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Departments</h4>
+              <ul>
+                <li><a href="#"> Cancer Oncology</a></li>
+                <li><a href="#"> Dental Surgery  </a></li>
+                <li><a href="#"> Diagnose & Research</a></li>
+                <li><a href="#">  Drug / Medicines</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><img src="images/fb-icon.png" alt="" /></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="" /></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="" /></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+    <!-- end info section -->
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+      <div class="container">
+        <p class="copyright">Mini project designed by <a href="#">Narasimha Swamy</a></p>
+      </div>
+    </div>
+   
+   </body>
+   </html>
